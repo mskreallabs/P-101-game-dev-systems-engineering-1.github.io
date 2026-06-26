@@ -7,18 +7,18 @@
 
 <div align="center">
   <!-- Dynamic typing header for the project name -->
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=700&size=36&pause=1000&color=4CAF50&center=true&vCenter=true&width=800&lines=[Project+Name+Here];Engineered+by+MSKRealLabs" alt="Project Typing SVG" />
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=700&size=36&pause=1000&color=4CAF50&center=true&vCenter=true&width=800&lines=MSKRealLabs+%7C+Game+Development+%26+Systems+Engineering;Engineered+by+MSKRealLabs" alt="Project Typing SVG" />
   
-  <p><b>[Insert a highly technical, 2-3 sentence description of the project here. E.g., "A robust, multi-threaded C# physics controller built specifically for Unity Engine to bypass standard Rigidbody limitations and ensure deterministic rendering across low-end mobile devices."]</b></p>
+  <p><b>Portfolio and technical hub of MSKRealLabs. Specializing in native C++ core engineering, OpenGL shaders, Unreal Engine 4 architecture, and game security audits.</b></p>
 
   <!-- Dynamic Repo Badges -->
   <p>
-    <img src="https://img.shields.io/github/repo-size/MSKRealLabs/[Repo-Name]?style=for-the-badge&color=00599C" alt="Repo Size" />
-    <img src="https://img.shields.io/github/issues/MSKRealLabs/[Repo-Name]?style=for-the-badge&color=D32F2F" alt="Issues" />
-    <img src="https://img.shields.io/github/forks/MSKRealLabs/[Repo-Name]?style=for-the-badge&color=1976D2" alt="Forks" />
-    <img src="https://img.shields.io/github/stars/MSKRealLabs/[Repo-Name]?style=for-the-badge&color=FBC02D" alt="Stars" />
-    <img src="https://img.shields.io/github/last-commit/MSKRealLabs/[Repo-Name]?style=for-the-badge&color=5586A4" alt="Last Commit" />
-    <img src="https://img.shields.io/github/license/MSKRealLabs/[Repo-Name]?style=for-the-badge&color=F5792A" alt="License" />
+    <img src="https://img.shields.io/github/repo-size/MSKRealLabs/P-101-game-dev-systems-engineering-1?style=for-the-badge&color=00599C" alt="Repo Size" />
+    <img src="https://img.shields.io/github/issues/MSKRealLabs/P-101-game-dev-systems-engineering-1?style=for-the-badge&color=D32F2F" alt="Issues" />
+    <img src="https://img.shields.io/github/forks/MSKRealLabs/P-101-game-dev-systems-engineering-1?style=for-the-badge&color=1976D2" alt="Forks" />
+    <img src="https://img.shields.io/github/stars/MSKRealLabs/P-101-game-dev-systems-engineering-1?style=for-the-badge&color=FBC02D" alt="Stars" />
+    <img src="https://img.shields.io/github/last-commit/MSKRealLabs/P-101-game-dev-systems-engineering-1?style=for-the-badge&color=5586A4" alt="Last Commit" />
+    <img src="https://img.shields.io/github/license/MSKRealLabs/P-101-game-dev-systems-engineering-1?style=for-the-badge&color=F5792A" alt="License" />
   </p>
 </div>
 
@@ -59,10 +59,10 @@
 ## 🔧 Installation & Build Logic
 ```bash
 # 1. Clone the core repository
-git clone https://github.com/MSKRealLabs/[Repo-Name].git
+git clone https://github.com/MSKRealLabs/P-101-game-dev-systems-engineering-1.git
 
 # 2. Navigate to the build directory
-cd [Repo-Name]/Builds
+cd P-101-game-dev-systems-engineering-1/Builds
 
 # 3. Compile the native binaries or open the project in your Engine
 make compile_native
@@ -96,7 +96,7 @@ public class MSKPhysicsController : MonoBehaviour
 ---
 
 <div align="center">
-  <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiJJsK-uZtQ1T29oCNgD-HMWoFZV16SC-4ZBE7dTEw3u5b2HbpOxzaoCOdNO2sld0n-qy__RvHEzj_cVPvOsExlgxqKRxHWZsAhlFBDgu8C44VUQ44p_ji1AthvOwl0hR8w7AR5GZRxDK8MEpTNyrOmg357J1DYxlfh0Grngra-PJ4uZP-1T5Kx5f1fiI2e/s16000/logo.png" alt="MSKRealLabs Logo" width="100" />
+  <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjP565_zjhw6gp1pAS2L1HmFaTd_7mncAVlx1-8PXaCj4tRI8jvJBNY7YmO5c0LbzGnDWXgYkPP5nj6Qn0KwXf6h6Vy5oUApkrRNQDu0y7jyJg5pCvS6rLJH0BxIPq4FxMyUJpeZS3rNbPPOXt686Fe_k3qQYan-zMcLQXQ4naKvwUubpLkwaVU9GKN6yYh/s320/logo.webp" alt="MSKRealLabs Logo" width="100" />
 
   <h3>Engineered by <a href="https://github.com/MSKRealLabs">MSKRealLabs</a></h3>
   <p>Software & Game Developer | C++ & C# Architect | Unity & UE4 Specialist</p>
