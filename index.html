@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset='UTF-8'/>
+    <meta content='width=device-width, initial-scale=1.0' name='viewport'/>
+    <title>MSKRealLabs | Game Development &amp; Systems Engineering</title>
+    <meta content='MSKRealLabs | Game Development &amp; Systems Engineering' name='title'/>
+    <meta content='Portfolio and technical hub of MSKRealLabs. Specializing in native C++ core engineering, OpenGL shaders, Unreal Engine 4 architecture, and game security audits.' name='description'/>
+    <meta content='MSKRealLabs, Game Developer, Systems Engineer, C++, Unreal Engine 4, OpenGL, GLSL, Blender 3D, Cybersecurity, Vulnerability Analysis' name='keywords'/>
+    <meta content='index, follow' name='robots'/>
+    <meta content='English' name='language'/>
+    <meta content='MSKRealLabs' name='author'/>
+
+    <meta content='website' property='og:type'/>
+    <meta content='https://mskdecode.odoo.com/' property='og:url'/>
+    <meta content='MSKRealLabs | Game Development &amp; Systems Engineering' property='og:title'/>
+    <meta content='Explore high-performance native C++ core systems, custom GLSL shaders, Blender 3D asset pipelines, and Unreal Engine 4 technical optimization.' property='og:description'/>
+    <meta content='https://mskdecode.odoo.com/path-to-your-logo.png' property='og:image'/>
+
+    <meta content='summary_large_image' property='twitter:card'/>
+    <meta content='https://mskdecode.odoo.com/' property='twitter:url'/>
+    <meta content='MSKRealLabs | Game Development &amp; Systems Engineering' property='twitter:title'/>
+    <meta content='Explore high-performance native C++ core systems, custom GLSL shaders, Blender 3D asset pipelines, and Unreal Engine 4 technical optimization.' property='twitter:description'/>
+    <meta content='https://mskdecode.odoo.com/path-to-your-logo.png' property='twitter:image'/>
+    
+    <link href='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiAY4a8TEHutARra6VrvoX3-PLfuvGq0SdDGTlVSLp1QgkKQxm3RHbnxy7PiI81FIUqsHJXDD08j_KuqKHxEBx2lnw3MszMApEO7Hc0ZFMCsB59XfCYmx1YWNNDYlEJa42c-9WLC_3DQGveyv1HWXjBBYYz6AJj7Qjc5GchZSFYQQR5ju4k9cf_EEzT0jM2/s16000/android-chrome-192x192.png' rel='icon' type='image/x-icon'/>
+    
+    
+    
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<canvas id="canvas3d"></canvas>
+
+    <b:section id='main' name='main'/>                     
+    
+    <div class='mobile-menu-items'>
+      <div class='close-icon'>
+        <img alt='Close Menu' src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhV3ntL5SO4-kTbGmyFygrZMVvR_KnAnX3BXyk6gpR6d80AmxX6BOOPOQGfhSzgV4J1ziTijr3kaIefAGVmaAmyUK4Fd7IYnz6Oj9SRGGOyzVxzhKiEfYXAy6xSDrfhDlAAeU9HH3HXr7AY8W5jbwxSKPceJEXvpUFHCHrJBDjZGysjHehYyRVDb-9e7yTY/s16000/close-icon.webp'/> 
+      </div>
+      <a href='/'>Home</a>
+      <a href='#tool'>Tools</a>
+      <a href='#game'>Games</a>
+      <a href='#blog'>Articles</a>
+      <a href='#services'>Services</a>
+      <a href='#contact'>Contact</a>
+      <a class='btn' href='#about'>About Profile</a>
+    </div>
+
+    <div class='search-container'>
+      <form action='#'>
+        <div class='search-input-container'>
+          <input placeholder='Search architectural code &amp; tools...' type='search' id="searchField"/>
+        </div>
+        <button class='search-btn' type='submit'>Execute Search</button>
+      </form>
+    </div>
+
+    <div class='container'>
+      <nav>
+        <div class='logo'>
+          <a href='/'><img alt='MSKRealLabs Core System Logo' src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiJJsK-uZtQ1T29oCNgD-HMWoFZV16SC-4ZBE7dTEw3u5b2HbpOxzaoCOdNO2sld0n-qy__RvHEzj_cVPvOsExlgxqKRxHWZsAhlFBDgu8C44VUQ44p_ji1AthvOwl0hR8w7AR5GZRxDK8MEpTNyrOmg357J1DYxlfh0Grngra-PJ4uZP-1T5Kx5f1fiI2e/s16000/logo.png'/></a>
+        </div>
+                                  
+        <div class='menu-items'>
+          <a href='/'>Home</a>
+          <a href='#tool'>Tools</a>
+          <a href='#game'>Games</a>
+          <a href='#blog'>Articles</a>
+          <a href='#services'>Services</a>
+          <a href='#contact'>Contact</a>
+          <a class='btn' href='#about'>About Bio</a>
+          <div class='search-icon'>
+            <svg fill='none' stroke='currentColor' stroke-width='2' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'>
+              <path d='m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z' stroke-linecap='round' stroke-linejoin='round'/>
+            </svg>
+          </div>
+        </div>
+
+        <div class='mobile-icons-container'>
+          <div class='search-icon'>
+            <svg fill='none' stroke='currentColor' stroke-width='2' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'>
+              <path d='m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z' stroke-linecap='round' stroke-linejoin='round'/>
+            </svg>
+          </div>
+          <div class='menu-icon'>
+            <img alt='Open Menu Menu' src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjOPLMacktDBPgywTucAH9AUHnQtbn0x9RbbC7MKsAQP0GAZqY_R-EWxtB20qYrZ42-ufc7l6AtWHtwsmj5izgIExjGRU8tJeucf6-AcBnAOLFGruuYQYUIZhmMeYSlehcZEc9EYcyDyjS_Qcn1od4_vo4mYyhdBF5tbCNJZR5EVIKN_R9GxYHNUIIylLm3/s320/menu-bar.png'/>
+          </div>
+        </div>
+      </nav>
+
+      <header>
+        <div class='left'>
+          <h1>MSKRealLabs</h1>
+          <p class='sub-heading'>
+            <strong>Junior IT Specialist &amp; Game Developer</strong>
+            Specializing in low-level graphics programming, native engine development, and interactive environments. Focused on C++, OpenGL, UE4, Blender, Cybersecurity, and Responsive Frontend Development.
+          </p>
+          <div class='buttons'>
+            <a class='btn' href='#about'>Explore System</a>
+            <a class='btn outlined' href='#contact'>Initiate Contact</a>
+          </div>
+        </div>
+
+        <div class='right'>
+          <img alt='MSKRealLabs Core Rendering Graphic Component' src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiAvhJkp8hCl-7jKO-sa954TtMg5SF5fAu3saU6CsIsSU-amuf3xhJ1l282kCOeoc7Oi1MoEe110orvs35WiXWbSXAKJgG_8fSFRLqVdGg7l4UcwXCIezMO4HuA1CXtQMceDNuk1ulI6p49C0z45SVZORE-rX6F2mK7HbdUxrL2UJI_W4fVjEYMcgERQwy5/s16000/heroimage.png'/>
+        </div>
+        <div class='bg-color'/>
+      </header>
+    </div>
+
+    <div class='featured'>
+      <div class='container'>
+        <h2>External Network Channels</h2>
+        <div class='logos'>
+          <a href='https://www.youtube.com/@MSKRealLabs' target="_blank"><img alt='YouTube Node' src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgaHviK2rAb5vODE7WusDYBrvs39kcFSobBcEM9k-F7s7WdDd5bReGUFvHtQwmQ03kd1guHpy_zqPeUDI0mTEuNWZXiVrJ4k_V8fk3J8w6FGd98DA81-yaoSuc-aYQ-YtNM_RT6q3qIRAWJGhrW1sbQ7DCPIN6NHIglum_Q0VsNM756FoGB4Q_A9hz4_jNW/s16000/youtube.png'/></a>
+          <a href='https://www.tiktok.com/@MSKRealLabs' target="_blank"><img alt='TikTok Node' src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhl2vv7sGFh2GM5k9uiU5w-Zr7384v4mfya2oKaK5nDsT29HqXRPdoMERumfXmxUzseeuAg9n6t0vOEkJkubiwRIru3Brm7_4j3s-ElFtKVMgJgqYjOHpz-2k9iyYhIn7xLuFmfwUK3C-pl9Wt1_rP1NOplBRbreFruxlQPCYUVmmrNPTiAenyaQHjbZliR/w320-h320/tik-tok.png'/></a>
+          <a href='https://www.facebook.com/MSKRealLabs' target="_blank"><img alt='Facebook Node' src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh6j89LWL7jakTDpXsvxdRpRtTxRFmDLk9f8Y7Ax9jMdOw8QueYZPuAVnB7fnKpMn3BddGtMigbL0Mh4G6CzctSioJcZ52UegbJ4A7bxDtNMM_b9ISPdOeVT4rW-XypEuIBylW5vwVRQ3JTsuae78UbFmImXaq2A-NZUo53I7tJs5ULqOyr5Jic7B1usvsG/s320/facebook.png'/></a>
+          <a href='https://www.instagram.com/MSKRealLabs' target="_blank"><img alt='Instagram Node' src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhNjT1sqBCgHoFlFNGy6yFv54q4G1B0QDVWAC0D57wp4uqJ16ie06TkJwTnOnTXlO1onZX-UofN69HSva4Jdm0dxx1ySwR0KYyBunnEVykEtxI-9xFtInuW0NNRugMJLdZcsXdQMmHGc7TAPqBDqCBB9mNyazNvLY8Tksip3AxzPS2Jz_zHpzdiGAplrO21/s16000/instagram.png'/></a>
+          <a href='https://www.linkedin.com/in/MSKRealLabs' target="_blank"><img alt='LinkedIn Node' src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiKAPrkYfnu3xGlEuDZTNRDiCpg5DSUypG56cd4nwWZTj4C9Znk5JAy7im8_n3JnfJF9VOJIbNeEtaqlJaM1FwThA_RS2BgY3gnC78FFUAPElav2XOaSLJ-BWe1cdzl9tZFKPIqiztgtf_3Yy3D-Mn9lJccjIW76ceLc1eod_VnBZez5xD6sdwVSaP7Li3a/s320/linkedin.png'/></a>
+          <a href='https://github.com/MSKRealLabs' target="_blank"><img alt='GitHub Node Repository' src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiTwhdne-ymuis0FnqAbcRyqbAYjAX27OSLGvvWVvho6FxaWx2TzG1uh0jZIxzux0YLsVfv3ZZqWhRV0PPQd-TPlYyKr-VU-rWOgs-6ZDGKpdrQD1-oKBMWd_wAxAyYp6sGpR1eHdInxiczVVm7YdCYe02ttLNeuk6ks-1T6uHVfAqJl-RjYflmpFw6YgHy/s320/github.png'/></a>  
+        </div>
+      </div>
+    </div>
+
+    <section id='tool'>
+      <div class='container'>
+        <div class='heading-container'>
+          <h2>Featured Developer Tools</h2>
+          <p>Practical scripts, generators, and software utilities built to optimize development pipelines.</p>
+        </div>
+
+        <div class='services-container'>
+          <div class='service'>
+            <a href='#'><img alt='Procedural Rendering Preview Layout' src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiAWRsuWvvKiZHDNOBNXErJKkA_FTsdKXKaOZcAY5jw4C8AJz_6IiPrPUtQba7W0FrUikUVw2K_cluvhSSghLYUFkpPSEU_3oS06FK2umWgVcT7MFuPOkdZGvPYHq9LS6wlDlk2jTM4MpOmPZI7JBwNMn9QVzksOwLE6A1kGZbgkkSEd9Ks7L74iPv52lIc/s320/toolpost1.png'/></a>
+            <div class='content'>
+              <h3>Building a Procedural Terrain Generator</h3>
+              <div class='labels'>
+                <span class='label'>OpenGL</span>
+                <span class='label'>C++</span>
+              </div>
+              <p>Develop a lightweight desktop utility using core C++ and OpenGL to dynamically generate low-poly 3D landscapes using Perlin noise algorithms.</p>
+            </div>
+          </div>
+
+          <div class='service'>
+            <a href='#'><img alt='Asset Pipeline Sanitizer Execution Script Graphic' src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhzhT8avR9n1esJbDusjwUPygzp6ENgAaJUsn-wimjJ_vJsbDbj_drM02xaQRb51Izjdop5fnWbCYbVRnIFgzlTA6Ya5vVTESiej2oJmloRhoVCU3QMiPJuyWY15CtgPk4CBf3Wmu5q0VTLXuhkeUsACWihB7KV4Sgd6fZMkPxl8GzceQIIH3p6r-m4mvjy/s320/toolpost2.png'/></a>
+            <div class='content'>
+              <h3>Blender to Engine Asset FBX Sanitizer</h3>
+              <div class='labels'>
+                <span class='label'>Blender</span>
+                <span class='label'>Python</span>
+              </div>
+              <p>A custom automation script that strips unnecessary data blocks, corrects local pivot transforms, and optimizes custom vertex normals before game engine import.</p>
+            </div>
+          </div>
+
+          <div class='service'>
+            <a href='#'><img alt='WebGL 3D Web Canvas Framework Layer Viewport' src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjS9DnnLqnUu4bmHPRb_2_0ZhYaPTfPQFaRwqNSY23Va1v2u3b9PTFTa0NQ7eKIlfq-mhzEoCTUsgqYvjh3EaoDYB6vt5iEiXXEX5HCTO9C5eZT-AcPI5Kr4eFimgGCryVkGx08AjiJxyEMB3RjlgF76gET_ap_ZAXfy-ZQS6pQt4Ef9e_c9_RmNaJggRDf/s320/toolpost3.png'/></a>
+            <div class='content'>
+              <h3>Web-Based 3D Model Viewer Layout</h3>
+              <div class='labels'>
+                <span class='label'>Frontend</span>
+                <span class='label'>WebGL</span>
+              </div>
+              <p>A clean, responsive web interface designed to host interactive 3D assets smoothly directly within the browser using optimized canvas elements.</p>
+            </div>
+          </div>
+        </div>
+        <div style="text-align: center;"><a class='btn outlined' href='#'>View All Tools</a></div>
+      </div>
+    </section>
+
+    <section id='game'>
+      <div class='container'>
+        <div class='heading-container'>
+          <h2>Core Game Projects</h2>
+          <p>Deep-dives into game architecture, real-time mechanics, and performance optimization.</p>
+        </div>
+
+        <div class='services-container'>
+          <div class='service'>
+            <a href='#'><img alt='Native Player Controller Simulation Framework Window' src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiGNe37k4ZpKZN6_HmvLyZqYxcTniXFPEGJt5GZ6d0uawA_RDVzRvlBIqIm1VzHQ6BUaeYunQKxHli8cVP5Tm5nxFUe96JAYLS-qFDhqWGzrEf0OdzFs-0lR05IdFDepMFrFusfQ5gzs1Bh92r5shazfI6axyN47syJwCND1bdxNGFMC5UhS4glvC1b6S9g/s320/gamepost1.png'/></a>
+            <div class='content'>
+              <h3>Custom C++ Gameplay Mechanics in UE4</h3>
+              <div class='labels'>
+                <span class='label'>UE4</span>
+                <span class='label'>C++ Code</span>
+              </div>
+              <p>Writing optimized, native C++ player controllers and movement components to handle high-speed physics and precise input response.</p>
+            </div>
+          </div>
+
+          <div class='service'>
+            <a href='#'><img alt='Unreal Engine AI Behavior Node Pipeline Graph' src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiGv4K4X7j_lPw0ty_pNYkbyFyvDR8_KL6wVwDqA5a84ysNe_DzA1UFE1LBEOmrvbWWXfC2TQQmx76FW7LQPlM2N1dbLR6cMUSTP9YpX8ute7f0Tp6_hd1xAhaLABqe_94NgIP08S4ldT92ktheTy-4h6thpXFuWUaQ2pT_JZ_etbJxPQt7b87DHNIEe-D_/s320/gamepost2.png'/></a>
+            <div class='content'>
+              <h3>AI Behavior Trees &amp; Combat Systems</h3>
+              <div class='labels'>
+                <span class='label'>Game AI</span>
+                <span class='label'>Blueprints</span>
+              </div>
+              <p>Designing complex enemy tracking logic, dynamic attack switching, and hit-detection systems using Unreal Engine's behavior trees.</p>
+            </div>
+          </div>
+
+          <div class='service'>
+            <a href='#'><img alt='Realtime Material Shading Graph Network' src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh3t7T1lZ1KnLOuoTca4xEcSyKjcrJwwj6URLJfWsmSfB-mN0g5xcta5i3yznaA68APOw_EMqu4KEgctsk8tpZ0GRr7goNlmSIr4EJNObXp9JOQ3ZBZ8s8IKpBTbj7q1aVmN3N3L8fsDulXnNIQxGxWW-rM4melD0FBYVDSzA9KMbD016-axq29yEBNJOi1/s320/gamepost3.png'/></a>
+            <div class='content'>
+              <h3>Advanced Character Shaders &amp; Texturing</h3>
+              <div class='labels'>
+                <span class='label'>Blender</span>
+                <span class='label'>Materials</span>
+              </div>
+              <p>Configuring high-fidelity micro-surface details, vertex painting, and custom material graphs to make game models stand out under dynamic lighting.</p>
+            </div>
+          </div>
+        </div>
+        <div style="text-align: center;"><a class='btn outlined' href='#'>View All Projects</a></div>
+      </div>
+    </section>
+
+    <section id='blog'>
+      <div class='container'>
+        <div class='heading-container'>
+          <h2>Technical Articles &amp; Research</h2>
+          <p>In-depth write-ups covering system vulnerabilities, graphics architecture, and digital pipeline optimization.</p>
+        </div>
+
+        <div class='services-container'>
+          <div class='service'>
+            <a href='#'><img alt='Security Penetration Memory Scanning Audit Environment' src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhjn4-J8PcuI6fcK-6SEzAnmCYa9Vwut6MfA-OW7cPiiRuhZejiGhDpuDMt9kbdTGXO_ggArwxq8nq44z4dmDAXeOMkJrqR31s2stpej9tx6xNlwb6WlFQ1-PsR_OHLfnGzxpSpCgqb1owbhIyDmQoiS2kFd2X8Du2F-AeoxjZnkqqv0mD5Wo1ggL4hek8G/s320/blogpost2.png'/></a>
+            <div class='content'>
+              <h3>Analyzing Technical Vulnerabilities in Mobile Software</h3>
+              <div class='labels'>
+                <span class='label'>Cybersecurity</span>
+                <span class='label'>Research</span>
+              </div>
+              <p>An introductory look into network discovery tools, memory manipulation risks, and foundational practices for testing system weak points securely.</p>
+            </div>
+          </div>
+
+          <div class='service'>
+            <a href='#'><img alt='Procedural Generation Logic System Script Node Template' src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh3N3ybwfjs3HgA1Af5PxlERn23_mRq7GlfH5Szh3v249_1TYupHovXrQdrExAeqN9_slS53xzx4LeWPoC-ucHDXBA4jl5Iw1pFGp05lR53yPauUlVWYO-qA7SooQTZtNyRl4DrvG3ld42ay_PxmI5NnC9tp4qdfiAi17fcGuiAOsYrA3-f8dJwBwqFWERv/s320/blogpost1.png'/></a>
+            <div class='content'>
+              <h3>AI-Driven Prompts for Precision 3D Assets</h3>
+              <div class='labels'>
+                <span class='label'>AI Productivity</span>
+                <span class='label'>Digital Art</span>
+              </div>
+              <p>Designing structured XML templates and prompt-generation logic to streamline the conceptual phase of digital character design.</p>
+            </div>
+          </div>
+
+          <div class='service'>
+            <a href='#'><img alt='Linux Console Graphics Optimization Kernel Screen' src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhjn4-J8PcuI6fcK-6SEzAnmCYa9Vwut6MfA-OW7cPiiRuhZejiGhDpuDMt9kbdTGXO_ggArwxq8nq44z4dmDAXeOMkJrqR31s2stpej9tx6xNlwb6WlFQ1-PsR_OHLfnGzxpSpCgqb1owbhIyDmQoiS2kFd2X8Du2F-AeoxjZnkqqv0mD5Wo1ggL4hek8G/s320/blogpost2.png'/></a>
+            <div class='content'>
+              <h3>Configuring Linux Hardware Acceleration</h3>
+              <div class='labels'>
+                <span class='label'>Linux</span>
+                <span class='label'>Graphics API</span>
+              </div>
+              <p>A troubleshooting guide on enabling GPU drivers and optimizing system parameters to get full native performance out of OpenGL configurations.</p>
+            </div>
+          </div>
+        </div>
+        <div style="text-align: center;"><a class='btn outlined' href='#'>View All Articles</a></div>
+      </div>
+    </section>
+
+    <section id='why'>
+      <div class='container'>
+        <div class='left'>
+          <img alt='MSKRealLabs Hardware Performance Integration Graphic Blueprint' src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjBXlbHRcV-XsNZ9wl6qmaLQP91u7RY2eYag3zXzM7OX2qXLvtnze_TmqfHq-6ZGosu-H-x1cIp4SseB4gtaL2cGb8cKnKjiXGbz9GzjfRDe8_bBQ5DZt2Nc_hzW03k0xZB3OwipPEFNHGXLz5YM4-Lx10TkFef79H_T4mbfidtWE5VRdcKWn1w-ivbN_XN/s16000/whyimage.png'/>
+        </div>
+
+        <div class='right'>
+          <h2>Why Work With MSKRealLabs</h2>
+          <p>I excel in native game development, bridging the gap between low-level performance code (C++/OpenGL) and high-fidelity real-time experiences using Unreal Engine 4. Every system I build prioritizes optimization, stability, and clean engineering.</p>
+
+          <div class='features-container'>
+            <div class='feature'>
+              <h3>Core System Expertise</h3>
+              <p>Advanced technical execution in hardware optimization, native code systems, and real-time matrix mechanics without depending on basic templates.</p>
+            </div>
+
+            <div class='feature'>
+              <h3>Bespoke Engineering</h3>
+              <p>Custom tools tailored specifically around processing performance limits and precise engine mechanics designed from raw arrays.</p>
+            </div>
+          </div>
+          <a class='btn light' href='#contact'>Connect with Engine</a>
+        </div>
+      </div>
+    </section>
+
+    <section id='services'>
+      <div class='container'>
+        <div class='heading-container'>
+          <h2>Technical Development Services</h2>
+          <p>I build robust, performance-optimized, native software architectures using core C++ engineering, OpenGL graphics, and Unreal Engine 4.</p>
+        </div>
+
+        <div class='services-container'>
+          <div class='service'>
+            <img alt='Modular C++ System Software Design Terminal' src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhEVa1ZFmx69a0DBGMhZv4YzYJe1r2N_QBWKUFUyxwgZ9nHHBXpGaeZUF907JuVasfAdM15HXWwu6BzvZSrHVBqvNJZIWqNeOaOV_1qGD51AMQrPIIKa9q9Aqg-MZKzYnehRCqFuEaw9sdIAhtheXCDFZHTewIdpQYzGOQPNiorSgzfSos3znyyQkaHPB4D/s320/servicepost1.png'/>
+            <div class='content'>
+              <h3>C++ Engine Engineering</h3>
+              <p>Native C++ software solutions focused on building clean, modular, and optimized system architectures, from console utilities to high-performance graphics pipelines.</p>
+            </div>
+          </div>
+
+          <div class='service'>
+            <img alt='3D Content Graphics Processing Workflow Pipeline' src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgiZIBMWc56wdpkE8N8kZzjBdeO15zyDhfvuEMtU4PYt4zU2v8tVOURoTGyNKgDFXP9JXPDAfMeW6taxATgXqBi4U0LYBMCzNyj7lNZl95hmY0OWi79Yu3FiiF4FePss29C5x-3BYgTOtwZycF7SXc90fhfo4zTgbEcXkJOmLgAQmsPqu5mrGMwVNGD14Ar/s320/servicepost2.png'/>
+            <div class='content'>
+              <h3>3D Asset Pipelines &amp; Shaders</h3>
+              <p>Creating optimized 3D asset workflows using Blender and custom Blender-Python scripts. I focus on developing high-fidelity material graphs and custom shader development (GLSL/HLSL).</p>
+            </div>
+          </div>
+
+          <div class='service'>
+            <img alt='Advanced Interactive Game Mechanics Simulation Node' src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiiXwhC0Besd_AP-6JeHF78zAedZNE1PNBf7I7uOLZVb9DLI6zsZlsmW9FanPq93Uv2UxAiHij8QcXDSptYbPYI_a-yNrDgidQqjE1i3YGmRWcP1sjV6fV_P_hlxb9z6oFHH8oSM-qOMTCQ4QInjk6yzoPScjUlADRFA0aVxFr2OOZy68AbYLnCb-L7h6Cb/s320/servicepost3.png'/>
+            <div class='content'>
+              <h3>Unreal Engine Architecture &amp; Optimization</h3>
+              <p>Structuring advanced gameplay mechanics, Behavior Trees for complex AI, and Native C++ optimization for UE4 projects, moving beyond template logic to build efficient, scalable systems.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id='about'>
+      <div class='container'>
+        <div class='left'>
+          <h2>MSKRealLabs</h2>
+          <p>
+            <strong>A Junior Game Developer &amp; Systems Engineer</strong> specializing in C++ core architectures, low-level OpenGL rendering, and Unreal Engine 4 mechanics. I design optimized 3D pipelines in Blender and conduct technical vulnerability research to build high-performance, secure digital experiences. Always building, always optimizing.
+          </p>
+
+          <div class='features-container'>
+            <div class='feature'>
+              <h3>Low-Level Computation</h3>
+              <p>Writing clean, memory-efficient native C++ code to handle heavy math, complex gameplay sub-systems, and custom tool extensions from scratch.</p>
+            </div>
+
+            <div class='feature'>
+              <h3>Technical Visualization</h3>
+              <p>Bridging code and visuals by building custom GLSL shaders, structural asset pipelines in Blender, and complex real-time lighting systems inside UE4.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class='right'>
+          <img alt='MSKRealLabs Visual Component Symbol Asset' src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiJJsK-uZtQ1T29oCNgD-HMWoFZV16SC-4ZBE7dTEw3u5b2HbpOxzaoCOdNO2sld0n-qy__RvHEzj_cVPvOsExlgxqKRxHWZsAhlFBDgu8C44VUQ44p_ji1AthvOwl0hR8w7AR5GZRxDK8MEpTNyrOmg357J1DYxlfh0Grngra-PJ4uZP-1T5Kx5f1fiI2e/s16000/logo.png'/>
+        </div>
+      </div>
+    </section>
+
+    <section id='contact'>
+      <div class='container'>
+        <div class='heading-container'>
+          <h2>Have a Technical Project in Mind?</h2>
+          <p>Let's collaborate to solve architectural challenges, optimize rendering pipelines, or conduct software security audits.</p>
+        </div>
+
+        <form action='#'>
+          <div class='group'>
+            <input placeholder='Full Name Identification' type='text' required/>
+            <input placeholder='Secure Endpoint Email' type='email' required/>
+          </div>
+          <textarea placeholder='Input secure message data stream transmission requirements here...' required></textarea>
+          <button class='btn' type='submit'>Dispatch Transmission</button>
+        </form>
+      </div>
+    </section>
+
+    <footer>
+      <div class='container'>
+        <div class='top'>
+          <div class='left'>
+            <a class='logo' href='#'><img alt='System Terminal Base Symbol' src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiJJsK-uZtQ1T29oCNgD-HMWoFZV16SC-4ZBE7dTEw3u5b2HbpOxzaoCOdNO2sld0n-qy__RvHEzj_cVPvOsExlgxqKRxHWZsAhlFBDgu8C44VUQ44p_ji1AthvOwl0hR8w7AR5GZRxDK8MEpTNyrOmg357J1DYxlfh0Grngra-PJ4uZP-1T5Kx5f1fiI2e/s16000/logo.png'/></a>
+            <p><strong>MSKRealLabs</strong><br/>Bridging the gap between low-level performance code, high-fidelity real-time graphics, and technical software security.</p>
+          </div>
+
+          <div class='right'>
+            <p>Sync Network Streams</p>
+            <div class='social'>
+              <a href='https://www.youtube.com/@MSKRealLabs' target="_blank"><img alt='YouTube Terminal' src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgaHviK2rAb5vODE7WusDYBrvs39kcFSobBcEM9k-F7s7WdDd5bReGUFvHtQwmQ03kd1guHpy_zqPeUDI0mTEuNWZXiVrJ4k_V8fk3J8w6FGd98DA81-yaoSuc-aYQ-YtNM_RT6q3qIRAWJGhrW1sbQ7DCPIN6NHIglum_Q0VsNM756FoGB4Q_A9hz4_jNW/s16000/youtube.png'/></a>
+              <a href='https://www.tiktok.com/@MSKRealLabs' target="_blank"><img alt='TikTok Terminal' src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhl2vv7sGFh2GM5k9uiU5w-Zr7384v4mfya2oKaK5nDsT29HqXRPdoMERumfXmxUzseeuAg9n6t0vOEkJkubiwRIru3Brm7_4j3s-ElFtKVMgJgqYjOHpz-2k9iyYhIn7xLuFmfwUK3C-pl9Wt1_rP1NOplBRbreFruxlQPCYUVmmrNPTiAenyaQHjbZliR/w320-h320/tik-tok.png'/></a>
+              <a href='https://www.facebook.com/MSKRealLabs' target="_blank"><img alt='Facebook Terminal' src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh6j89LWL7jakTDpXsvxdRpRtTxRFmDLk9f8Y7Ax9jMdOw8QueYZPuAVnB7fnKpMn3BddGtMigbL0Mh4G6CzctSioJcZ52UegbJ4A7bxDtNMM_b9ISPdOeVT4rW-XypEuIBylW5vwVRQ3JTsuae78UbFmImXaq2A-NZUo53I7tJs5ULqOyr5Jic7B1usvsG/s320/facebook.png'/></a>
+              <a href='https://www.instagram.com/MSKRealLabs' target="_blank"><img alt='Instagram Terminal' src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhNjT1sqBCgHoFlFNGy6yFv54q4G1B0QDVWAC0D57wp4uqJ16ie06TkJwTnOnTXlO1onZX-UofN69HSva4Jdm0dxx1ySwR0KYyBunnEVykEtxI-9xFtInuW0NNRugMJLdZcsXdQMmHGc7TAPqBDqCBB9mNyazNvLY8Tksip3AxzPS2Jz_zHpzdiGAplrO21/s16000/instagram.png'/></a>
+              <a href='https://www.linkedin.com/in/MSKRealLabs' target="_blank"><img alt='LinkedIn Terminal' src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiKAPrkYfnu3xGlEuDZTNRDiCpg5DSUypG56cd4nwWZTj4C9Znk5JAy7im8_n3JnfJF9VOJIbNeEtaqlJaM1FwThA_RS2BgY3gnC78FFUAPElav2XOaSLJ-BWe1cdzl9tZFKPIqiztgtf_3Yy3D-Mn9lJccjIW76ceLc1eod_VnBZez5xD6sdwVSaP7Li3a/s320/linkedin.png'/></a>
+              <a href='https://github.com/MSKRealLabs' target="_blank"><img alt='GitHub Repository Port' src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiTwhdne-ymuis0FnqAbcRyqbAYjAX27OSLGvvWVvho6FxaWx2TzG1uh0jZIxzux0YLsVfv3ZZqWhRV0PPQd-TPlYyKr-VU-rWOgs-6ZDGKpdrQD1-oKBMWd_wAxAyYp6sGpR1eHdInxiczVVm7YdCYe02ttLNeuk6ks-1T6uHVfAqJl-RjYflmpFw6YgHy/s320/github.png'/></a>  
+            </div>
+          </div>
+        </div>
+
+        <div class='copyright'>
+          &#169; 2026 MSKRealLabs. All Rights Reserved. Systems Engineered Architecture Core.
+        </div>
+      </div>
+    <div style="text-align: center; padding: 20px; font-family: sans-serif; font-size: 14px; opacity: 0.8;">developed by mskreallabs with AI</div>
+</footer>
+
+    
+    
+  <script src="main.js"></script>
+</body>
+</html>
